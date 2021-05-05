@@ -13,11 +13,12 @@
         android:id="@+id/constraintLayout"
         android:layout_width="wrap_content"
         android:layout_height="116dp"
+        android:layout_gravity="center"
         android:layout_marginStart="@dimen/preview_side_margin"
         android:layout_marginLeft="@dimen/preview_side_margin"
         android:layout_marginEnd="@dimen/preview_side_margin"
         android:layout_marginRight="@dimen/preview_side_margin"
-        android:layout_marginBottom="24dp">
+        android:layout_marginBottom="5dp">
 
 
         <RelativeLayout

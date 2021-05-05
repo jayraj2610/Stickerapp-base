@@ -140,6 +140,9 @@ public class StickerPackListActivity extends AddStickerPackActivity {
                public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
                    // Handle the error
                   // Toast.makeText(StickerPackListActivity.this, "failed to load ad", Toast.LENGTH_SHORT).show();
+
+
+
                    Log.i("---------onAdLoaded", loadAdError.getMessage());
                    mInterstitialAd = null;
                }
@@ -154,7 +157,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
             mInterstitialAd.show(this);
 
         } else {
-            Toast.makeText(this, "your slow internet saved you from ad", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.internet_saved_you_from_ad), Toast.LENGTH_SHORT).show();
             Log.d("---------------->>admob", "The interstitial ad wasn't ready yet.");
 
         }
@@ -215,7 +218,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
                 Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("text/plain");
                 i.putExtra(Intent.EXTRA_SUBJECT,"subject");
-                String  sAUX ="\n hey TRY this amazing sticker pack \n created by jkstudio\n\n ";
+                String  sAUX =getString(R.string.share_app_msg);
                 sAUX = sAUX + "https://play.google.com/store/apps/details?id=com.jkstudio.jksticker";
                 i.putExtra(Intent.EXTRA_TEXT,sAUX);
                 startActivity(Intent.createChooser(i,"choose one"));
@@ -262,17 +265,17 @@ public class StickerPackListActivity extends AddStickerPackActivity {
         }else if (id==R.id.menu_viewAD){
         if(!surpriseopen) {
             ShowAd();
-            Toast.makeText(this, ">>>>>aap ka kat gya <<<<<<<", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.surprise_open_toast), Toast.LENGTH_SHORT).show();
             surpriseopen = true;
         }else
         {
-            Toast.makeText(this, "surprise already opened :) ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.surprise_already_opened), Toast.LENGTH_SHORT).show();
         }
 
 
 
         }else if (id==R.id.menu_about){
-            Toast.makeText(this," kya dikhau about me", Toast.LENGTH_LONG).show();
+            Toast.makeText(this,getString(R.string.about_Toast), Toast.LENGTH_LONG).show();
 
 
         }else if (id==R.id.playstore){

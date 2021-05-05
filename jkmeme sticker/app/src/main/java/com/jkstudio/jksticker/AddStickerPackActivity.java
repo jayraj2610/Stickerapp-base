@@ -83,13 +83,14 @@ public abstract class AddStickerPackActivity extends BaseActivity {
                ShowAd();
             } else
                 {
+                    Toast.makeText(this, getString(R.string.internet_saved_you_from_ad), Toast.LENGTH_SHORT).show();
                 Log.d("---------------->>admob", "The interstitial ad wasn't ready yet.");
                 //reload the ad
                 }
             //-----------ad end--------------
         }else
         {
-            Toast.makeText(this, "Luck you NO ads ", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.no_ads), Toast.LENGTH_LONG).show();
         }
 
     }

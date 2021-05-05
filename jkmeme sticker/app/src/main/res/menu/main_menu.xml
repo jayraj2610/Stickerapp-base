@@ -30,7 +30,7 @@
     <item android:title="@string/rateme"
         android:id="@+id/menu_rateme"/>
 
-    <item android:title="@string/about"
+    <item android:title="ABOUT"
         android:id="@+id/menu_about"/>
 
     <item android:title="@string/contactme"

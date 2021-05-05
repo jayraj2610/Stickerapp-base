@@ -33,7 +33,7 @@
     <!-- Title in the intent chooser that shows when user has multiple email client installed -->
     <string name="info_send_email_to_prompt">Send email with</string>
     <!-- Message to show in a dialog when user fails to add sticker pack -->
-    <string name="add_pack_fail_prompt_update_whatsapp">Sticker pack not added. If you\'d like to add it, make sure you update to the latest version of WhatsApp.</string>
+    <string name="add_pack_fail_prompt_update_whatsapp">Sticker pack not added. If you\'d like to add it, make sure you update to the latest version of WhatsApp. OR it was cancled by user</string>
     <!-- Text in dialog button when a user has an old version of WhatsApp that prevents them from adding the sticker pack, clicking on it will take user to play store -->
     <string name="add_pack_fail_prompt_update_play_link">Update</string>
     <!-- Toast text when we could not take user to play store because they don't have Google Play app installed -->
@@ -42,12 +42,25 @@
     <string name="sticker_pack_animation_indicator" tools:ignore="MissingTranslation">Animated sticker pack</string>
     <!-- text we display at the end of sticker pack details page showing that users can tap sticker to see bigger version -->
     <string name="sticker_pack_details_tap_to_preview" tools:ignore="MissingTranslation">Tap to preview sticker</string>
+
+
+
+
+
+
+
     <string name="shareApp" translatable="false">Share App</string>
-    <string name="about" translatable="false">About</string>
+
     <string name="rateme" translatable="false">Rate Me</string>
     <string name="contactme" translatable="false">Contact Me</string>
     <string name="toastexitmsg">Exit</string>
 
+    //===============fun =============================
+    <string name="about_Toast" translatable="false">kya dikhau about me</string>
+    <string name="no_ads" translatable="false"> Luck you NO ads </string>
+    <string name="surprise_open_toast" translatable="false"> =====# aap ka kat gya #=====  </string>
+    <string name="surprise_already_opened" translatable="false"> surprise already opened :) </string>
+    <string name="internet_saved_you_from_ad" translatable="false">your slow internet saved you from ad</string>
 
 
 
@@ -60,13 +73,23 @@
     <string name="version_name" translatable="false">1.3</string>
     <string name="admob_appid" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
     <string name="adunitI" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
-    <string name="adunitB" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
     <string name="playstorpage_link" translatable="false">https://play.google.com/store/apps/dev?id=7683473458812702011</string>
     <string name="review_link" translatable="false">Market://dev?id=7683473458812702011</string>
     <string name="playstore_open_page" translatable="false">Market://dev?id=7683473458812702011</string>
     <string name="privcy_link" translatable="false">otherapps_list</string>
     <string name="terms_link" translatable="false">otherapps_list</string>
     <string name="title_activity_otherapps_list" translatable="false">otherapps_list</string>
+
+    <string name="share_app_msg" translatable="false">
+        \n hey TRY this amazing sticker pack \n \n
+
+        created by jkstudio \n
+        .
+        . \n
+    </string>
+    <string name="share_app_link_msg" translatable="false">https://play.google.com/store/apps/details?id=com.jkstudio.jksticker</string>
+
 
 
 
