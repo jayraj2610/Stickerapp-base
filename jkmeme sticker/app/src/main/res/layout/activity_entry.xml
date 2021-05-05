@@ -52,7 +52,7 @@
             android:layout_height="25dp"
             android:fontFamily="@font/audiowide"
             android:gravity="center"
-            android:text="meme sticker for WA"
+            android:text="@string/app_splash_name"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
