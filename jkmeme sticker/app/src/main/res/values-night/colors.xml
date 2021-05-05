@@ -29,6 +29,7 @@
     <color name="orangetexthint">#DAFB9B23</color>
     <color name="listtextdark">#DAFF3B00</color>
     <color name="listsubtextdark">#DA4E332B</color>
+    <color name="BGsplash">#000000</color>
 
 
 </resources>
