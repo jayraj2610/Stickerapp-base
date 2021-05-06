@@ -155,7 +155,8 @@ public class StickerPackListActivity extends AddStickerPackActivity {
     public void ShowAd() {
         if (mInterstitialAd != null) {
             mInterstitialAd.show(this);
-
+            Toast.makeText(this, getString(R.string.surprise_open_toast), Toast.LENGTH_SHORT).show();
+            surpriseopen = true;
         } else {
             Toast.makeText(this, getString(R.string.internet_saved_you_from_ad), Toast.LENGTH_SHORT).show();
             Log.d("---------------->>admob", "The interstitial ad wasn't ready yet.");
@@ -265,8 +266,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
         }else if (id==R.id.menu_viewAD){
         if(!surpriseopen) {
             ShowAd();
-            Toast.makeText(this, getString(R.string.surprise_open_toast), Toast.LENGTH_SHORT).show();
-            surpriseopen = true;
+
         }else
         {
             Toast.makeText(this, getString(R.string.surprise_already_opened), Toast.LENGTH_SHORT).show();
@@ -275,7 +275,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
 
 
         }else if (id==R.id.menu_about){
-            Toast.makeText(this,getString(R.string.about_Toast), Toast.LENGTH_LONG).show();
+            Toast.makeText(this,getString(R.string.about_Toast)+"\n version : "+getString(R.string.version_name), Toast.LENGTH_LONG).show();
 
 
         }else if (id==R.id.playstore){
