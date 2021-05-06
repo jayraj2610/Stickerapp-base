@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:screenOrientation = "portrait">
+
+
+    <item android:title="@string/shareApp"
+        android:id="@+id/menu_shareapp"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_menu_share"/>
+
+    <item android:title="SURPRISE"
+        android:id="@+id/menu_viewAD"/>
+    <item android:title="How To remove Stiker"
+        android:id="@+id/menu_howtoremove_stiker"/>
+
+    <item android:title="@string/privacy_policy"
+        android:id="@+id/menu_privecypolicy"/>
+
+    <item android:title="Other Apps"
+        android:id="@+id/menu_otherapps">
+        <menu>
+            <item android:title="PlayStore"
+                android:id="@+id/playstore"/>
+            <item android:title="In App"
+                android:id="@+id/In_app"/>
+        </menu>
+
+    </item>
+    <item android:title="@string/rateme"
+        android:id="@+id/menu_rateme"/>
+
+    <item android:title="ABOUT"
+        android:id="@+id/menu_about"/>
+
+    <item android:title="@string/contactme"
+        android:id="@+id/menu_contact_me"/>
+    <item android:title="Exit"
+        android:id="@+id/menu_exit"/>
+
+
+</menu>

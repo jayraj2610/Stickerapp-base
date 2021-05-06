@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9B08</color>
+    <color name="colorPrimaryDark">#BABABA</color>
+    <color name="colorAccent">#128C7E</color>
+    <color name="inactiveAddButtonColor">#B3B3B3</color>
+    <color name="infoPageBackgroundColor">#EBEBEB</color>
+    <color name="actionBarArrowColor">#F19549</color>
+    <color name="animatedStickerIndicator">#DC2D2D</color>
+    <color name="primary_text">#E61000</color>
+    <color name="dark_gray">#524646</color>
+    <color name="gray_color">#8A8484</color>
+    <color name="primary_text_light">#AAA3A3</color>
+    <color name="blue">#271ACC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimarybg">#FFB84D</color>
+    <color name="gradiantmiddle">#B034C5</color>
+    <color name="gradiantstart1">#BE0D00</color>
+    <color name="gradiantend1">#4C73EC</color>
+    <color name="gradiantmiddle2">#B034C5</color>
+    <color name="gradiantstart2">#BE0D00</color>
+    <color name="gradiantend2">#4C73EC</color>
+    <color name="lightblue">#95AFFF</color>
+    <color name="wgreenlight">#88EF84</color>
+    <color name="wgreen">#BDFFBB</color>
+    <color name="orangedark">#FF8600</color>
+    <color name="wdarkgreen">#6FFF6A</color>
+    <color name="orange">#FFBF60</color>
+    <color name="orangetexthint">#DAFB9B23</color>
+    <color name="listtextdark">#DAFF3B00</color>
+    <color name="listsubtextdark">#DA4E332B</color>
+    <color name="BGsplash">#000000</color>
+
+
+</resources>
