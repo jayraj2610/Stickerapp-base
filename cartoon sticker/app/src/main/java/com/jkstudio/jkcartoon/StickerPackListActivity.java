@@ -61,13 +61,13 @@ public class StickerPackListActivity extends AddStickerPackActivity {
 
 
     //---------------review----------------
-    ReviewManager manager;
-    ReviewInfo reviewInfo;
+    private ReviewManager manager;
+    private ReviewInfo reviewInfo;
 
     public void iniReview()
     {
         manager = ReviewManagerFactory.create(this);
-        Task<ReviewInfo> request = manager.requestReviewFlow();
+        Task <ReviewInfo> request = manager.requestReviewFlow();
         request.addOnCompleteListener(task -> {
 
             if (task.isSuccessful()) {
@@ -82,7 +82,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
 
 
     }
-            private void startReview(ReviewInfo reviewinfo)
+            private void startReview(ReviewInfo reviewInfo)
             {
                 Task<Void> flow = manager.launchReviewFlow(this, reviewInfo);
 
@@ -220,7 +220,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
                 i.setType("text/plain");
                 i.putExtra(Intent.EXTRA_SUBJECT,"subject");
                 String  sAUX =getString(R.string.share_app_msg);
-                sAUX = sAUX + "https://play.google.com/store/apps/details?id=com.jkstudio.jksticker";
+                sAUX = sAUX + "https://play.google.com/store/apps/details?id="+getString(R.string.appid);
                 i.putExtra(Intent.EXTRA_TEXT,sAUX);
                 startActivity(Intent.createChooser(i,"choose one"));
 

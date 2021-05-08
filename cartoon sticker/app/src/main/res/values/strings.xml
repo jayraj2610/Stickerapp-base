@@ -71,7 +71,7 @@
     <string name="app_name" translatable="false">cartoon sticker for WA </string>
     <string name="appid" translatable="false">com.jkstudio.jkcartoon</string> //manual edit
     <string name="app_splash_name" translatable="false">cartoon sticker for WA</string>
-    <string name="version_name" translatable="false">1.3</string>
+    <string name="version_name" translatable="false">1.5</string>
     <string name="admob_appid" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
     <string name="adunitI" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
 
