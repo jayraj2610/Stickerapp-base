@@ -21,12 +21,13 @@
 
         <ProgressBar
             android:id="@+id/entry_activity_progress"
-            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Small"
             android:layout_width="236dp"
             android:layout_height="51dp"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:background="#00FFFFFF"
+            android:progressTint="#EF430E"
             android:scrollbarSize="25dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
@@ -44,7 +45,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.398"
-            app:srcCompat="@mipmap/ic_launcher" />
+            app:srcCompat="@drawable/cartoonlogo512" />
 
         <TextView
             android:id="@+id/textView"

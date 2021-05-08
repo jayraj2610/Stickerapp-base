@@ -277,7 +277,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
 
 
         }else if (id==R.id.menu_about){
-            Toast.makeText(this,getString(R.string.about_Toast), Toast.LENGTH_LONG).show();
+            Toast.makeText(this,getString(R.string.about_Toast)+"\n version : "+getString(R.string.version_name), Toast.LENGTH_LONG).show();
 
 
         }else if (id==R.id.playstore){

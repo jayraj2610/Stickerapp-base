@@ -35,8 +35,10 @@
 
     <item android:title="@string/contactme"
         android:id="@+id/menu_contact_me"/>
-    <item android:title="Exit"
-        android:id="@+id/menu_exit"/>
+    <item
+        android:id="@+id/menu_exit"
+        android:title="Exit"
+        app:showAsAction="always|withText" />
 
 
 </menu>

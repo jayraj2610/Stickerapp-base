@@ -58,10 +58,10 @@
 
     //===============fun =============================
     <string name="about_Toast" translatable="false">kya dikhau about me</string>
-    <string name="no_ads" translatable="false"> Luck you NO ads </string>
-    <string name="surprise_open_toast" translatable="false"> =====# aap ka kat gya #=====  </string>
+    <string name="no_ads" translatable="false"> ✨Luck you NO ads✨</string>
+    <string name="surprise_open_toast" translatable="false"> =====# aap ka kat gya 😜 #=====  </string>
     <string name="surprise_already_opened" translatable="false"> surprise already opened :) </string>
-    <string name="internet_saved_you_from_ad" translatable="false">your slow internet saved you from ad</string>
+    <string name="internet_saved_you_from_ad" translatable="false">😩 your slow internet saved you from ad</string>
 
 
 
@@ -78,14 +78,14 @@
     <string name="playstorpage_link" translatable="false">https://play.google.com/store/apps/dev?id=7683473458812702011</string>
     <string name="review_link" translatable="false">Market://dev?id=7683473458812702011</string>
     <string name="playstore_open_page" translatable="false">Market://dev?id=7683473458812702011</string>
-    <string name="privcy_link" translatable="false">otherapps_list</string>
+    <string name="privcy_link" translatable="false">https://jayraj2610.github.io/APP-TC-and-PP-/</string>
     <string name="terms_link" translatable="false">otherapps_list</string>
     <string name="title_activity_otherapps_list" translatable="false">otherapps_list</string>
 
     <string name="share_app_msg" translatable="false">
-        \n hey TRY this amazing sticker pack \n \n
+        \n hey TRY this amazing sticker pack 😍😍😍\n \n
 
-        created by jkstudio \n
+        created by ✨jkstudio✨ \n
         .
         . \n
     </string>
