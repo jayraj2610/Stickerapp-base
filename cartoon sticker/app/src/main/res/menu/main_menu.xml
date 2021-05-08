@@ -28,7 +28,14 @@
 
     </item>
     <item android:title="@string/rateme"
-        android:id="@+id/menu_rateme"/>
+        android:id="@+id/menu_rateme">
+    <menu>
+        <item android:title="in app rate"
+            android:id="@+id/inappreview"/>
+        <item android:title="playstore"
+            android:id="@+id/playstorereview"/>
+    </menu>
+    </item>
 
     <item android:title="ABOUT"
         android:id="@+id/menu_about"/>

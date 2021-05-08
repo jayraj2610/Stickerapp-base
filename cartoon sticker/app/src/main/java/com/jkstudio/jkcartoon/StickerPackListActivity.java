@@ -220,7 +220,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
                 i.setType("text/plain");
                 i.putExtra(Intent.EXTRA_SUBJECT,"subject");
                 String  sAUX =getString(R.string.share_app_msg);
-                sAUX = sAUX + "https://play.google.com/store/apps/details?id="+getString(R.string.appid);
+                sAUX = sAUX + "https://play.google.com/store/apps/details?id="+getPackageName();
                 i.putExtra(Intent.EXTRA_TEXT,sAUX);
                 startActivity(Intent.createChooser(i,"choose one"));
 
@@ -231,7 +231,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
 
 
 
-        }else if (id==R.id.menu_rateme){
+        }else if (id==R.id.inappreview){
            // Toast.makeText(this, "rate me", Toast.LENGTH_SHORT).show();
 
            try
@@ -239,13 +239,29 @@ public class StickerPackListActivity extends AddStickerPackActivity {
                iniReview();
            }catch(ActivityNotFoundException e)
            {
-               startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.review_link))));
+               Toast.makeText(this, "in app review failed", Toast.LENGTH_SHORT).show();
            }
 
 
 
 
-        }else if (id==R.id.menu_howtoremove_stiker){
+        }else if (id==R.id.playstorereview){
+            // Toast.makeText(this, "rate me", Toast.LENGTH_SHORT).show();
+
+            try
+            {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + getPackageName())));
+            }catch(ActivityNotFoundException e)
+            {
+                Toast.makeText(this, "failed to open playstore", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + getPackageName())));
+            }
+
+
+
+
+        }
+        else if (id==R.id.menu_howtoremove_stiker){
 
 
 
