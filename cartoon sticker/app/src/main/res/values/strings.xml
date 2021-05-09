@@ -46,7 +46,13 @@
 
 
 
-
+//==========================rate diloge==========
+    <string name="rate_dialog_title" translatable="false">Rate this app</string>
+    <string name="rate_dialog_message" translatable="false">If you enjoy using this app, would you mind taking a moment to rate it? It won\'t take more than a minute. Thanks for your support!</string>
+    <string name="rate_dialog_ok" translatable="false">Rate It Now</string>
+    <string name="rate_dialog_cancel" translatable="false">Remind Me Later</string>
+    <string name="rate_dialog_no" translatable="false">No, Thanks</string>
+    //================================================
 
 
 

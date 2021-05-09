@@ -38,6 +38,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import hotchemi.android.rate.AppRate;
+import hotchemi.android.rate.OnClickButtonListener;
 
 
 public class StickerPackListActivity extends AddStickerPackActivity {
@@ -56,7 +58,27 @@ public class StickerPackListActivity extends AddStickerPackActivity {
 
 
 
+    //------------review dialog---------
 
+    public void ratedilogini()
+    {
+        AppRate.with(this)
+                .setInstallDays(0) // default 10, 0 means install day.
+                .setLaunchTimes(2) // default 10
+                .setRemindInterval(1) // default 1
+                .setShowLaterButton(true) // default true
+                .setDebug(false) // default false
+                .setOnClickButtonListener(new OnClickButtonListener() { // callback listener.
+                    @Override
+                    public void onClickButton(int which) {
+
+                    }
+                })
+                .monitor();
+
+        // Show a dialog if meets conditions
+        AppRate.showRateDialogIfMeetsConditions(this);
+    }
 
 
 
@@ -73,7 +95,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
             if (task.isSuccessful()) {
                 // We can get the ReviewInfo object
               reviewInfo = task.getResult();
-            startReview(reviewInfo);
+
             } else {
                 // There was some problem, log or handle the error code.
                 Toast.makeText(this, "rating failed", Toast.LENGTH_SHORT).show();
@@ -174,6 +196,9 @@ public class StickerPackListActivity extends AddStickerPackActivity {
 
         MobileAds.initialize(this, initializationStatus -> { });
 
+            ////==========
+              iniReview();
+              ratedilogini();
 
 
 
@@ -236,7 +261,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
 
            try
            {
-               iniReview();
+               startReview(reviewInfo);
            }catch(ActivityNotFoundException e)
            {
                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.review_link))));
@@ -309,7 +334,10 @@ public class StickerPackListActivity extends AddStickerPackActivity {
             this.finishAffinity();
 
 
-        }
+        }   else if (id==R.id.menu_exit2){
+
+
+        this.finishAffinity();}
 
         return super.onOptionsItemSelected(item);
     }
