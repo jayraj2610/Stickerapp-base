@@ -34,7 +34,7 @@
     <string name="info_send_email_to_prompt">Send email with</string>
     <!-- Message to show in a dialog when user fails to add sticker pack -->
     <string name="add_pack_fail_prompt_update_whatsapp">Sticker pack not added. If you\'d like to add it, make sure you update to the latest version of WhatsApp.
-        OR it was cancled by user</string>
+     \n   \n OR it was cancled by user</string>
     <!-- Text in dialog button when a user has an old version of WhatsApp that prevents them from adding the sticker pack, clicking on it will take user to play store -->
     <string name="add_pack_fail_prompt_update_play_link">Update</string>
     <!-- Toast text when we could not take user to play store because they don't have Google Play app installed -->
@@ -77,9 +77,14 @@
     <string name="app_name" translatable="false">cartoon sticker for WA </string>
     <string name="appid" translatable="false">com.jkstudio.jkcartoon</string> //manual edit
     <string name="app_splash_name" translatable="false">cartoon sticker for WA</string>
-    <string name="version_name" translatable="false">1.7</string>
+    <string name="version_name" translatable="false">1.11</string>
+
     <string name="admob_appid" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    //==== test >>> ca-app-pub-3940256099942544~3347511713
+    //==== my >>>>> ca-app-pub-7205492089564900~2638344193
     <string name="adunitI" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    //=== test >>>> ca-app-pub-3940256099942544/1033173712
+    //=== my >>>>>> ca-app-pub-7205492089564900/8287446060
 
     <string name="playstorpage_link" translatable="false">https://play.google.com/store/apps/dev?id=7683473458812702011</string>
     <string name="review_link" translatable="false">Market://dev?id=7683473458812702011</string>

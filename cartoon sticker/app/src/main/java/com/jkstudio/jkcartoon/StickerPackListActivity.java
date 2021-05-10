@@ -108,7 +108,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
             {
                 Task<Void> flow = manager.launchReviewFlow(this, reviewInfo);
 
-                flow.addOnSuccessListener(result -> Toast.makeText(getBaseContext(), "review success", Toast.LENGTH_SHORT).show());
+                flow.addOnSuccessListener(result -> Toast.makeText(getBaseContext(), "review success \n i am working on this bug", Toast.LENGTH_SHORT).show());
             }
 
 
@@ -141,7 +141,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
 
 
 
-   public void loadAd() {
+   private void loadAdlist() {
 
        if(true) {
            //--------------------------ads---------------
@@ -174,7 +174,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
 
     }
 
-    public void ShowAd() {
+   private void ShowAdlist() {
         if (mInterstitialAd != null) {
             mInterstitialAd.show(this);
             surpriseopen = true;
@@ -205,7 +205,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
 
             if(!firstload) {
                // Toast.makeText(this, "first adload", Toast.LENGTH_SHORT).show();
-                loadAd();
+                loadAdlist();
                 firstload = true;
             }
 
@@ -308,7 +308,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
         }else if (id==R.id.menu_viewAD){
         if(!surpriseopen) {
 
-            ShowAd();
+            ShowAdlist();
 
           //  surpriseopen = true;
         }else

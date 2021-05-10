@@ -39,7 +39,7 @@ public abstract class AddStickerPackActivity extends BaseActivity {
 
     }
 
-   public void loadAd()
+   private void loadAdadd()
     {
         AdRequest adRequest = new AdRequest.Builder().build();
         InterstitialAd.load(this, getString(R.string.adunitI), adRequest, new InterstitialAdLoadCallback()
@@ -64,7 +64,7 @@ public abstract class AddStickerPackActivity extends BaseActivity {
         });
 
     }
-    public void ShowAd()
+   private void ShowAdadd()
     {
         mInterstitialAd.show(this);
     }
@@ -80,7 +80,7 @@ public abstract class AddStickerPackActivity extends BaseActivity {
 
             if (mInterstitialAd != null)
             {
-               ShowAd();
+               ShowAdadd();
             } else
                 {
                     Toast.makeText(this, getString(R.string.internet_saved_you_from_ad), Toast.LENGTH_SHORT).show();
@@ -106,7 +106,7 @@ public abstract class AddStickerPackActivity extends BaseActivity {
 
     protected void addStickerPackToWhatsApp(String identifier, String stickerPackName) {
 
-            loadAd();
+            loadAdadd();
 
 
         try {

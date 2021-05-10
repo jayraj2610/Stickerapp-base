@@ -10,7 +10,7 @@ android {
         applicationId "com.jkstudio.jkcartoon"
         minSdkVersion 22
         targetSdkVersion 30
-        versionCode 7
+        versionCode 11
         versionName "@string/version_name"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         def contentProviderAuthority = applicationId + ".stickercontentprovider"
